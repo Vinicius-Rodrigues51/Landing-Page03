@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script src="https://kit.fontawesome.com/262b954398.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Projeto03</title>
 </head>
@@ -21,13 +24,18 @@
                     <li><a href="#">contato</a></li>
                 </ul>
             </nav>
-
+            <i id="openMenu" class="fas fas2 fa-bars"></i>
             <nav class="mobile-menu">
+                <i id="closeMenu" class="fas fa-times"></i>
                 <ul>
                     <li><a id="first-a" href="#">home</a></li>
+                    <div class="under"></div>
                     <li><a href="#">serviços</a></li>
+                    <div class="under"></div>
                     <li><a href="#">sobre</a></li>
+                    <div class="under"></div>
                     <li><a href="#">contato</a></li>
+                    <div class="under"></div>
                 </ul>
             </nav>
 
@@ -156,12 +164,9 @@
             <div class="bottom-right">
                 <h2>Faça uma visita</h2>
 
-                <div class="mapouter"><div class="gmap_canvas"><iframe width="480"
-                    height="398" id="gmap_canvas" 
-                    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t
-                    =&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" 
-                    marginheight="0" marginwidth="0"></iframe><a href="https://123movies
-                    -to.org"></a><br> </div></div> 
+                <section class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.2600778697483!2d-0.13025689165774243!3d51.52201876381742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2e05fa84a1%3A0x35223832b9a7517a!2sUniversidade%20de%20Londres!5e0!3m2!1spt-BR!2sbr!4v1623708007520!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section> 
                 
             </div><!--bottom right-->
 

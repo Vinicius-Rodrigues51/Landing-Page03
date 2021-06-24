@@ -51,6 +51,56 @@ header .logo{
 
 header nav.mobile-menu{
     display: none;
+    background-color: #6353ab;
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: -280px;
+    position: fixed;
+    top: 0;
+    transition: all 0.4s;
+}
+
+.under{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: -10px;
+}
+
+header nav.mobile-menu ul{
+    margin: 50px 0px;
+    padding: 0 20px;
+    width: 200%;
+    margin-left: -20px;
+}
+
+header nav.mobile-menu ul li{
+    margin: 20px 0;
+    margin-left: 15px;
+}
+
+header nav.mobile-menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.fas{
+    color: white;
+    font-size: 34px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.fas2{
+    display: none;
+    margin: 0;
+    margin-right: 15px;
 }
 
 header nav.desktop-menu{
@@ -343,6 +393,7 @@ section.bottom{
     height: 158px;
     min-height: 158px;
     max-height: 158px;
+    resize: none;
 }
 
 .bottom-left input[type='submit']{
@@ -373,6 +424,15 @@ section.bottom{
     color: white;
 }
 
+.location{
+    width: 90%;
+    padding: 20px 0;
+}
+
+.location iframe{
+    width: 100%;
+}
+
 footer{
     width: 100%;
     padding: 20px 2%;
@@ -401,11 +461,47 @@ footer .right{
 
 /**********************************MEDIA SCREEN'S********************************/
 
-@media screen and (max-height: 650px){
+@media screen and (max-height: 700px){
+
+    *{
+        overflow-x: hidden;
+    }
+
     .chamada1{
         float: right;
         margin: 100px 80px;
         transition: 1s;
+    }
+
+    .location{
+        width: 180%;
+        padding: 20px 0;
+        margin-left: -70px;
+    }
+    
+    .location iframe{
+        height: 380px;
+        width: 100%;
+    }
+
+    .fas2{
+        display: block;
+    }
+
+    header nav.mobile-menu{
+        display: block;
+    }
+    
+    header nav.desktop-menu{
+        display: none;
+    }
+
+    .chamada1 h2{
+        font-size: 40px;
+    }
+    
+    .chamada1 p{
+        font-size: 22px;
     }
 }
 
